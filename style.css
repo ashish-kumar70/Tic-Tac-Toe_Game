@@ -1,0 +1,78 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+#main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: rgb(27, 26, 26);
+  h3{
+    color: chocolate;
+    font-family: "Kanit", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 5em;
+  }
+}
+
+.container {
+  display: grid;
+  height: 70vh;
+  width: 40vw;
+  min-width: 300px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  .box {
+    border: 0.4rem solid greenyellow;
+    color: aqua;
+    text-align: center;
+    font-size: 5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-family: "Kanit", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    
+  }
+  .bt-0 {
+    border-top: none;
+  }
+  .br-0 {
+    border-right: none;
+  }
+  .bl-0 {
+    border-left: none;
+  }
+  .bb-0 {
+    border-bottom: none;
+  }
+}
+.btn {
+  margin: 2rem;
+  button {
+    background-color: transparent;
+    border: none;
+    cursor:pointer;
+  }
+  img {
+    width: 3rem;
+    border: transparent;
+    border-radius: 35%;
+    
+    /* background-color: rgb(207, 71, 71); */
+  }
+  /* color: cadetblue; */
+}
+.btn_img {
+    transition: transform 1s ease-in-out; /* Add transition for smooth rotation */
+}
+
+.box:hover{
+  background-color: rgb(34, 33, 33);
+}
