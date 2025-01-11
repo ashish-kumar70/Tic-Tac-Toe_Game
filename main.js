@@ -2,6 +2,9 @@ let count = 1;
 let a = document.querySelectorAll(".box");
 let b = document.querySelector(".heading");
 function myfunc(element) {
+  if (b.innerHTML != ""){
+    return
+  }
   if (element.innerHTML === "") {
     
     if (count % 2 == 1) {
@@ -32,6 +35,7 @@ function anothfunc() {
   // Check the current rotation
   currentdegree += 360;
   x.style.transform = `rotate(${currentdegree}deg)`; // Rotate to 360 degrees
+  b.innerHTML = ""
 }
 
 function checkMYwin() {
